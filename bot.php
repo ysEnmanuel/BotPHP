@@ -9,10 +9,10 @@
     $message = $update["message"]["text"];
     
     if($message == "/start"){
-        send_message($chat_id, "Que Onda PA ".$first_name);
+        send_message($chat_id, "Bienvenido ".$first_name," a mi bot privado creado by @itsKyler666");
     }
     if($message == "/roll"){
-        $number = rand(1,999);
+        $number = rand(666,999);
         send_message($chat_id, $number);
     }
     if($message == "/time"){
