@@ -7,10 +7,9 @@
     $chat_id = $update["message"]["chat"]["id"];
     $username = $update["message"]["chat"]["username"];
     $message = $update["message"]["text"];
-    $txt = 
     
     if($message == "/start"){
-        send_message($chat_id, "Bienvenido @".$username." ".PHP_EOL." Este bot ha sido creado by @itsKyler666 1");
+        send_message($chat_id, "Bienvenido @".$username." Este bot ha sido creado by @itsKyler666");
     }
     if($message == "/roll"){
         $number = rand(666,999);
